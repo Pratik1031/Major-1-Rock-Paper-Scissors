@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock,Paper,Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard">
+        <div class="title">
+          <span>ROCK</span><br />
+          <span>PAPER</span><br />
+          <span>SCISSORS</span>
+        </div>
+
+        <div class="score-comp">
+          <p>
+            COMPUTER
+            <br />
+            SCORE
+          </p>
+          <span class="num">0</span>
+        </div>
+
+        <div class="score-user">
+          <p>
+            YOUR
+            <br />
+            SCORE
+          </p>
+          <span class="num">0</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="hand rock">
+          <img src="/assests/rock.png" onclick="pickUser('rock')" />
+        </div>
+        <div class="hand scissors">
+          <img src="/assests/scissor.png" onclick="pickUser('scissor')" />
+        </div>
+        <div class="hand paper">
+          <img src="/assests/paper.png" onclick="pickUser('paper')" />
+        </div>
+      </div>
+
+      <button class="rule-btn" tabindex="1">Rules</button>
+
+      <div class="modal">
+        <div class="modal-container">
+          <header class="modal-header">
+            <h2 class="modal-heading">Game Rules</h2>
+            <div class="close-btn">
+              <img src="/assests/Ellipse 6 (1)-overlay.png" alt="" />
+            </div>
+          </header>
+          <div id="rules">
+            <ul>
+              <li>
+                <span>
+                  Rock beats scissors, scissors beat paper, and paper beats
+                  rock.</span
+                >
+              </li>
+              <li>
+                <span
+                  >Agree ahead of time whether you’ll count off “rock, paper,
+                  scissors, shoot” or just “rock, paper, scissors.”</span
+                >
+              </li>
+              <li>
+                <span
+                  >Use rock, paper, scissors to settle minor decisions or simply
+                  play to pass the time</span
+                >
+              </li>
+              <li>
+                <span
+                  >If both players lay down the same hand, each player lays down
+                  another hand</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="contest">
+        <div class="user">
+          <h2>YOU PICKED</h2>
+          <div class="hand-img-container">
+            <img id="user-img" src="/assests/rock.png" />
+          </div>
+        </div>
+        <div class="result">
+          <div class="decision">
+            <h1>YOU WIN</h1>
+            <h2>Against PC</h2>
+          </div>
+          <div class="new-btn" onclick="restart()">Play Again</div>
+        </div>
+        <div class="computer">
+          <h2>PC PICKED</h2>
+          <div class="hand-img-container">
+            <img id="compPick-Img" src="/assests/paper.png" alt="" />
+          </div>
+        </div>
+        <div class="next-btn"><a href="hurray.html">NEXT</a></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

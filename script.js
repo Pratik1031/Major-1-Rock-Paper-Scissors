@@ -106,7 +106,7 @@ const restart = () => {
   contest.style.display = "none";
 };
 const regame = () => {
-  window.location.href = "http://127.0.0.1:5500/index.html";
+  window.location.href = "https://major-1-rock-paper-scissors.vercel.app/";
 };
 
 // Retrieve user score and comp score from local storage

@@ -142,3 +142,65 @@
   line-height: normal;
   text-align: center;
 }
+
+.vector {
+  position: absolute;
+  top: 6%;
+  left: 41%;
+  bottom: 50%;
+}
+.star1 {
+  position: absolute;
+  top: 7%;
+  left: 29%;
+  bottom: 50%;
+}
+.star2 {
+  position: absolute;
+  top: 0%;
+  left: 56%;
+  bottom: 50%;
+}
+.star3 {
+  position: absolute;
+  top: 1%;
+  left: 44%;
+  bottom: 50%;
+}
+.star4 {
+  position: absolute;
+  top: 1%;
+  left: 44%;
+  bottom: 50%;
+}
+.star5 {
+  position: absolute;
+  top: 28%;
+  left: 37%;
+  bottom: 50%;
+}
+.star6 {
+  position: absolute;
+  position: absolute;
+  top: 17%;
+  left: 60%;
+  bottom: 50%;
+}
+.star7 {
+  position: absolute;
+  top: 9%;
+  left: 63%;
+  bottom: 50%;
+}
+.star8 {
+  position: absolute;
+  top: 24%;
+  left: 58%;
+  bottom: 50%;
+}
+.star9 {
+  position: absolute;
+  top: 1%;
+  left: 24%;
+  bottom: 50%;
+}

@@ -106,7 +106,7 @@ const restart = () => {
   contest.style.display = "none";
 };
 const regame = () => {
-  window.location.assign("http://127.0.0.1:5500/index.html");
+  window.location.href = "http://127.0.0.1:5500/index.html";
 };
 
 // Retrieve user score and comp score from local storage
@@ -120,9 +120,9 @@ storedCompScore = parseInt(storedCompScore);
 // Check if the values were successfully retrieved
 if (storedUserScore && storedCompScore) {
   console.log("User Score:", storedUserScore);
-  document.querySelector(".score-user .num").innerText = storedUserScore;
+  document.querySelector(".score-user .num").innerHTML = storedUserScore;
   console.log("Comp Score:", storedCompScore);
-  document.querySelector(".score-comp .num").innerText = storedCompScore;
+  document.querySelector(".score-comp .num").innerHTML = storedCompScore;
 } else {
   console.log("Scores not found in local storage.");
 }
